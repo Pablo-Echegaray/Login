@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@700&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@500&display=swap');
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+}
+
+h3{
+    font-family: 'Krona One', sans-serif;
+    color: white;
+}
+
+label{
+    font-family: 'Acme', sans-serif;
+    color: white;
+}
+
+.container span{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+}
+
+.uno{
+    background-color: #2196F3;
+    
+}
+
+.dos{
+    background-color: #303F9F;
+    display: none;
+}
+
+
+
+.tres{
+    background-color: gray;
+    display: none;
+}
+
+.cuatro{
+    display: flex;
+    flex-direction: row;
+    background-color: #2196F3;
+    justify-content: space-around;
+    display: none;
+}
+
+.cuatro>section{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuatro section:first-child{
+    background-color: #64B5F6;
+    justify-content: space-around;
+   
+}
+
+.cuatro section:last-child>div:last-child{
+    height: 80%;
+    width: 90%;
+    background-color: #64B5F6;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    overflow: auto;
+   
+}
+
+.formularios{
+    height: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    width: 50%;
+    background-color: #303F9F;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+
+.forms{
+    height: 80%;
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   margin-top: 30px;
+   align-items: center;
+}
+
+.forms div {
+    
+    width: 80%;
+}
+
+.forms input {
+    width: 70%;
+}
+
+.forms button {
+    height: 100%;
+    width: 40%;
+    background-color: #42A5F5;
+    color: white;
+    border-radius: 6px;
+    font-family: 'Acme', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.forms button:hover{
+    opacity: 0.7;
+}
+
+.redirect{
+    text-align: center;
+    background-color:#0D47A1;
+    height: 40px;
+    width: 20%;
+    min-width: 200px;
+    max-width: 300px;
+    padding-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: 0.3s;
+    
+}
+
+.redirect:hover{
+    border: 2px solid greenyellow;
+    
+    
+}
+
+.newUser{
+    background-color: #1976D2;
+}
+
+.newUser button {
+    background-color: #0D47A1;
+}
+
+.two {
+    background-color: #2196F3;
+}
+
+.chat p{
+    font-family: 'Acme', sans-serif;
+    color: white;
+}
+
+#modal {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+#ventana {
+    background-color: #f3f3f3;
+    width: 45%;
+    position: relative;
+    border-radius: 0.25rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#alerta {
+    width: 10%;
+}
+
+.msj{
+    background-color: rgba(0,0,0, 0.2);
+    word-wrap: break-word;
+    *width: 80%;
+    min-width: 150px;
+    max-width: 400px;
+    border-radius: 16px;
+    box-shadow: 3px 3px 3px 2px black;
+    font-family: 'Piazzolla', serif;
+    margin-top: 15px;
+    padding: 4px;
+    
+}
+
+.msj h4 {
+    font-size: 0.6rem;
+}
+
+.msj p{
+    font-size: 14px;
+}
+
+.msj span{
+    font-size: 0.5rem;
+    color: black;
+}
+
+.msj button{
+    background-color: #1A237E;
+    border-radius: 6px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.msj button:hover {
+    border: 2px solid red;
+}
+
+.hora-btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 690px){
+    .cuatro{
+        height: 200vh;
+        flex-direction: column;
+    }
+    .cuatro>section{
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px){
+    .msj{
+        max-width: 300px;
+    }
+}
+
+/* font-family: 'Dancing Script', cursive; */
