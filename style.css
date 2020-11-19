@@ -56,6 +56,20 @@ label{
     display: none;
 }
 
+.tres #loader{
+    height: 6px;
+    *width: 10%;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.3s all ease;
+    animation-duration: 2000ms ;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
+    
+}
+
 .cuatro{
     display: flex;
     flex-direction: row;
@@ -245,6 +259,22 @@ label{
 .hora-btn{
     display: flex;
     justify-content: space-around;
+}
+
+@keyframes progreso {
+    0% { width: 0%}
+    10%{width: 10%}
+    20%{width: 20%}
+    30%{width: 30%}
+    40%{width: 40%}
+    50%{width: 50%}
+    60%{width: 60%}
+    70%{width: 70%}
+    80%{width: 80%}
+    90% {width: 90%}
+    98%{width: 100%}
+    100%{width: 100%}
+    
 }
 
 @media (max-width: 1200px){

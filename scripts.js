@@ -6,6 +6,7 @@ let mensajes = document.querySelector(".cuatro");
 let login = document.querySelector(".inicio");
 let registro = document.querySelector(".creacion");
 let chat = document.querySelector(".chat");
+let loader = document.getElementById("loader");
 
 let contador = 0;
 let usuarios = {
@@ -115,7 +116,7 @@ function acceder() {
   uno.style.display = "none";
   dos.style.display = "none";
   carga.style.display = "flex";
-
+  loader.style.animationName = "progreso";
   setTimeout(() => {
     carga.style.display = "none";
     mensajes.style.display = "flex";
@@ -203,11 +204,55 @@ chat.addEventListener("submit", (e) => {
   }
 });
 
+/* function progreso() {
+  let medida = 5;
+  setInterval(() => {
+    medida += 5;
+    let anchoL = (loader.style.width = `${medida}%`);
+    console.log(anchoL);
+    if (anchoL === "100%") {
+      clearInterval();
+      anchol = 0;
+      console.log(anchoL);
+    }
+  }, 0.1);
+} */
+
 /* window.addEventListener("resize", () => {
   let anchoDePantalla = window.innerWidth;
   divMsj = document.querySelector(".msj");
   let anchoDivMsj = divMsj.clientWidth;
-  if (anchoDivMsj >= 580) {
-    divMsj.style.maxWidth = anchoDivMsj - 10;
+  console.log(anchoDivMsj);
+  if (anchoDePantalla <= 1160) {
+    let width1 = (divMsj.style.maxWidth = anchoDivMsj + "px" - 50 + "px");
+    console.log(width1);
+  } else {
+    divMsj.style.maxWidth = "";
   }
 }); */
+
+/* for (let i = 10; i < 101; i++) {
+  let anchoL = i;
+  let ancho2 = (loader.style.width = anchoL + "%");
+  console.log(anchoL);
+  console.log(ancho2);
+} */
+
+/* function progreso() {
+  let medida = 0;
+  loader.style.width = `${medida}%`;
+  setInterval(() => {
+    medida += 5;
+    loader.style.width = `${medida}%`;
+    if (loader.style.width === "100%") {
+      clearInterval();
+      console.log(loader.style.width);
+      console.log(medida);
+    }
+  }, 0.1);
+  setTimeout(() => {
+    loader.style.width = 0;
+  }, 1500);
+}
+
+console.log(loader.clientWidth); */
