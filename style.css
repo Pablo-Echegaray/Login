@@ -82,11 +82,11 @@ label{
     height: 80%;
     width: 90%;
     background-color: #64B5F6;
-    border-radius: 12px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding-bottom: 6px;
     overflow: auto;
    
 }
@@ -204,14 +204,15 @@ label{
 .msj{
     background-color: rgba(0,0,0, 0.2);
     word-wrap: break-word;
-    *width: 80%;
-    min-width: 150px;
-    max-width: 400px;
-    border-radius: 16px;
-    box-shadow: 3px 3px 3px 2px black;
+    letter-spacing: 1px;
+    *width: 50%;
+    min-width: 250px;
+    max-width: 590px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px 2px black;
     font-family: 'Piazzolla', serif;
     margin-top: 15px;
-    padding: 4px;
+    padding: 0 5px 5px 12px;
     
 }
 
@@ -234,6 +235,7 @@ label{
     color: white;
     font-size: 12px;
     cursor: pointer;
+    transition: 0.3s all
 }
 
 .msj button:hover {
@@ -245,7 +247,49 @@ label{
     justify-content: space-around;
 }
 
-@media (max-width: 690px){
+@media (max-width: 1200px){
+    .msj{
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 1174px){
+    .msj{
+        max-width: 460px;
+    }
+}
+
+@media (max-width: 1120px){
+    .msj{
+        max-width: 430px;
+    }
+}
+
+@media (max-width: 1047px){
+    .msj{
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 968px){
+    .msj{
+        max-width: 370px;
+    }
+}
+
+@media (max-width: 905px){
+    .msj{
+        max-width: 330px;
+    }
+}
+
+@media (max-width: 822px){
+    .msj{
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 724px){
     .cuatro{
         height: 200vh;
         flex-direction: column;
@@ -254,11 +298,69 @@ label{
         height: 100vh;
         width: 100%;
     }
+
+    .msj{
+        max-width: 590px;
+    }
 }
 
-@media (max-width: 460px){
+@media (max-width: 700px){
+
     .msj{
-        max-width: 300px;
+        max-width: 560px;
+    }
+}
+
+@media (max-width: 670px){
+
+    .msj{
+        max-width: 510px;
+    }
+}
+
+@media (max-width: 610px){
+
+    .msj{
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 577px){
+
+    .msj{
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 514px){
+
+    .msj{
+        max-width: 380px;
+    }
+}
+
+@media (max-width: 470px){
+
+    .msj{
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 425px){
+    .msj{
+        max-width: 290px;
+    }
+}
+
+@media (max-width: 368px){
+    .msj{
+        max-width: 240px;
+    }
+}
+
+@media (max-width: 310px){
+    .msj{
+        max-width: 140px;
     }
 }
 

@@ -202,3 +202,12 @@ chat.addEventListener("submit", (e) => {
     chat.reset();
   }
 });
+
+/* window.addEventListener("resize", () => {
+  let anchoDePantalla = window.innerWidth;
+  divMsj = document.querySelector(".msj");
+  let anchoDivMsj = divMsj.clientWidth;
+  if (anchoDivMsj >= 580) {
+    divMsj.style.maxWidth = anchoDivMsj - 10;
+  }
+}); */
