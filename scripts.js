@@ -17,6 +17,11 @@ let usuarios = {
 toggle[0].addEventListener("click", cambiarForm);
 toggle[1].addEventListener("click", cambiarForm);
 toggle[2].addEventListener("click", () => {
+  let divMsjs = document.querySelectorAll(".msj");
+  let divChat = mensajes.childNodes[3].childNodes[5];
+  divMsjs.forEach((div) => {
+    divChat.removeChild(div);
+  });
   mensajes.style.display = "none";
   carga.style.display = "flex";
   setTimeout(() => {
