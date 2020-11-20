@@ -10,8 +10,8 @@ let loader = document.getElementById("loader");
 
 let contador = 0;
 let usuarios = {
-  pablo: "Vladi123",
-  sofia: "Vladi321",
+  pablo: "Abcde123",
+  echegaray: "Abcde321",
 };
 
 toggle[0].addEventListener("click", cambiarForm);
@@ -224,40 +224,8 @@ chat.addEventListener("submit", (e) => {
 } */
 
 /* window.addEventListener("resize", () => {
-  let anchoDePantalla = window.innerWidth;
-  divMsj = document.querySelector(".msj");
-  let anchoDivMsj = divMsj.clientWidth;
-  console.log(anchoDivMsj);
-  if (anchoDePantalla <= 1160) {
-    let width1 = (divMsj.style.maxWidth = anchoDivMsj + "px" - 50 + "px");
-    console.log(width1);
-  } else {
-    divMsj.style.maxWidth = "";
-  }
+  
 }); */
 
-/* for (let i = 10; i < 101; i++) {
-  let anchoL = i;
-  let ancho2 = (loader.style.width = anchoL + "%");
-  console.log(anchoL);
-  console.log(ancho2);
-} */
-
-/* function progreso() {
-  let medida = 0;
-  loader.style.width = `${medida}%`;
-  setInterval(() => {
-    medida += 5;
-    loader.style.width = `${medida}%`;
-    if (loader.style.width === "100%") {
-      clearInterval();
-      console.log(loader.style.width);
-      console.log(medida);
-    }
-  }, 0.1);
-  setTimeout(() => {
-    loader.style.width = 0;
-  }, 1500);
-}
-
+/* 
 console.log(loader.clientWidth); */

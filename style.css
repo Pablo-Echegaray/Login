@@ -8,9 +8,9 @@ body{
     
 }
 
-h1{
+h4{
     font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
+    font-size: 1.5rem;
 }
 
 h3{
@@ -116,6 +116,9 @@ label{
     box-shadow: 2px 2px 3px 2px black;
 }
 
+.mensaje p {
+    font-size: 1.5rem;
+}
 
 .forms{
     height: 80%;
@@ -223,7 +226,7 @@ label{
     min-width: 250px;
     max-width: 590px;
     border-radius: 4px;
-    box-shadow: 1px 2px 3px 2px black;
+    box-shadow: 2px 2px 3px 1px black;
     font-family: 'Piazzolla', serif;
     margin-top: 15px;
     padding: 0 5px 5px 12px;
@@ -231,7 +234,7 @@ label{
 }
 
 .msj h4 {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .msj p{
@@ -281,12 +284,19 @@ label{
     .msj{
         max-width: 470px;
     }
+
+    .formularios{
+        width: 80%;
+        
+    }
 }
 
 @media (max-width: 1174px){
     .msj{
         max-width: 460px;
     }
+
+    
 }
 
 @media (max-width: 1120px){
@@ -299,11 +309,26 @@ label{
     .msj{
         max-width: 400px;
     }
+
+    .formularios{
+        width: 80%;
+        
+    }
 }
 
 @media (max-width: 968px){
     .msj{
         max-width: 370px;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    
+    .formularios{
+        width: 90%;
+        
     }
 }
 
@@ -316,6 +341,10 @@ label{
 @media (max-width: 822px){
     .msj{
         max-width: 280px;
+    }
+
+    h3{
+        font-size: 0.90rem;
     }
 }
 
@@ -331,6 +360,15 @@ label{
 
     .msj{
         max-width: 590px;
+    }
+
+    h3{
+        font-size: 0.80rem;
+    }
+
+    .formularios{
+        width: 75%;
+        
     }
 }
 
@@ -353,6 +391,11 @@ label{
     .msj{
         max-width: 480px;
     }
+
+    .formularios{
+        width: 85%;
+        
+    }
 }
 
 @media (max-width: 577px){
@@ -374,6 +417,11 @@ label{
     .msj{
         max-width: 340px;
     }
+
+    .formularios{
+        width: 92%;
+        
+    }
 }
 
 @media (max-width: 425px){
@@ -385,6 +433,12 @@ label{
 @media (max-width: 368px){
     .msj{
         max-width: 240px;
+    }
+
+    .formularios{
+        height: 40%;
+        width: 92%;
+        
     }
 }
 
