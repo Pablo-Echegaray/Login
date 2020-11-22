@@ -63,7 +63,7 @@ function validarUsuarios(nombre, contraseña, a, b) {
     mostrarAdvertencia(texto, a);
   } else if (!expreg.test(nom)) {
     let texto =
-      "El nombre debe tener entre 3 y 10 letras, y debe ser cadena de texto";
+      "El nombre debe tener entre 3 y 10 letras, y debe ser cadena de texto sin espacios";
     mostrarAdvertencia(texto, a);
   } else if (nom.trim().length < 3) {
     let texto = "Su nombre no puede tener menos de 3 letras";
@@ -193,11 +193,11 @@ registro.addEventListener("submit", (e) => {
     crearUsuario(newName, nuevaContraseña.value);
     dos.style.display = "none";
     uno.style.display = "flex";
-  } else {
+  } /* else {
     let texto =
       "La contraseña debe contener entre 6 y 11 caracteres, y poseer al menos una mayuscula y un numero. El nombre de usuario no debe contener espacios";
     mostrarAdvertencia(texto, nuevoNombre);
-  }
+  } */
 });
 
 chat.addEventListener("submit", (e) => {

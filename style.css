@@ -196,6 +196,7 @@ label{
 #modal {
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
+    
     top: 0;
     right: 0;
     bottom: 0;
@@ -205,7 +206,10 @@ label{
 
 #ventana {
     background-color: #f3f3f3;
-    width: 45%;
+    height: 20vh;
+    width: 50%;
+    min-width: 300px;
+    padding: 2px;
     position: relative;
     border-radius: 0.25rem;
     top: 50%;
@@ -370,6 +374,11 @@ label{
         width: 75%;
         
     }
+
+    #ventana{
+        width: 60%;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 700px){
@@ -383,6 +392,11 @@ label{
 
     .msj{
         max-width: 510px;
+    }
+
+    #ventana{
+        width: 70%;
+        font-size: 0.9rem;
     }
 }
 
@@ -445,6 +459,12 @@ label{
 @media (max-width: 310px){
     .msj{
         max-width: 140px;
+    }
+
+    #ventana{
+        min-width: 250px;
+        width: 70%;
+        font-size: 0.9rem;
     }
 }
 
